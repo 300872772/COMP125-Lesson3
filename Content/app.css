@@ -1,0 +1,95 @@
+/*CSS goes here*/
+
+h1{
+    color:blue;
+}
+
+.box{
+    
+    margin-top: 70px;
+    height: 230px;
+    width:130px;
+    border: 5px deeppink;
+    background-color: pink;
+background: transparent;
+    
+}
+.box img{
+    padding-top: 80px;
+}
+.menu{
+    position: absolute;
+    top: 81px;
+    left: 20px;
+    padding-top: 80px;
+    margin-top: 130px;
+    color: crimson;
+    padding-left: 30px;
+      -webkit-transition: padding-top 1.6s;
+    -moz-transition: padding-top  1.6s;
+    transition: margin-top   1.6s;
+    z-index: -1;
+}
+.box:hover .menu{
+    
+    height: 181px;
+    width:181px;
+    
+    margin-top: 0px;
+  
+   
+   
+ 
+   
+-webkit-animation-name: example; 
+    -webkit-animation-duration: 3.5s ;
+    animation-name: example;
+    animation-duration: 3.5s ;
+    z-index: 1;
+}
+
+
+
+
+#rotate {
+  position: absolute;
+     
+    height: 20px;
+    width: 100px;
+    margin-top: -10px;
+    
+		  -webkit-transition:all 0.9s  ease;
+		  -moz-transition:all 0.9s ease;
+		  -ms-transition:all 0.9s ease;
+		  -o-transition:all 0.9s ease;
+		  transition:all 0.9s ease;
+		}
+
+.box:hover #rotate {
+    
+   
+		  -webkit-transform:rotate(-120deg);
+		  -moz-transform:rotate(-120deg);
+		  -ms-transform:rotate(-120deg);
+ 		 -o-transform:rotate(-120deg);
+  		transform:rotate(-120deg);
+          
+          		  -webkit-transform-origin: 0px 0px;
+		  -moz-transform-origin: 0px 0px;
+		  -ms-transform-origin: 0px 0px;
+ 		 -o-transform-origin: 0px 0px;
+  		transform-origin: 0px 0px;
+        
+		}
+/*
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from { z-index: -1;}
+    to { z-index: 1;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from { z-index: -1;}
+    to { z-index: 1;}
+}
